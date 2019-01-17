@@ -7,7 +7,7 @@
       <label>Dettagli</label>
       <textarea v-model="todo.details" placeholder="Details" required></textarea>
       <span class="error" v-if="invalidData">* Compilare tutti i campi</span>
-      <button id="submit" class="btn btn-primary" v-on:click.prevent="post">Add todo</button>
+      <button id="submit" class="btn btn-primary" v-on:click.prevent="addTodo">Add todo</button>
     </form>
     <button v-if="submitted" id="submit" type="button" class="btn btn-primary" v-on:click="reload">Create an other todo</button>
   </div>
@@ -29,13 +29,19 @@ export default {
       invalidData: false
     }
   },
+  created(){
+    this.$parent.todolist = true;
+    this.$parent.projectKey = this.$route.params.id;
+    this.verifyProjectValidation(this.$parent.projectKey);
+    this.submitted = false;
+  },
   methods: {
-    post: function(){
+    addTodo: function(){
       if(this.todo.title != "" && this.todo.details != ""){
         this.invalidData = false;
         var userId = auth.currentUser.uid;
-        console.log("users/"+ userId + "/projects/" + this.$parent.projectKey + "/posts");
-        database.ref("users/"+ userId + "/projects/" + this.$parent.projectKey + "/posts").set({
+        var newPostKey = database.ref().child("users/"+ userId + "/projects/" + this.$parent.projectKey + "/posts").push().key;
+        database.ref("users/"+ userId + "/projects/" + this.$parent.projectKey + "/posts/" + newPostKey).set({
           //name of the todo
           title: this.todo.title,
           //description of the todo
@@ -65,19 +71,13 @@ export default {
     //get the project and verify if is created by the current user
     verifyProjectValidation: function(projectId){
       var user = auth.currentUser;
-      this.$http.get("https://todolist-project99.firebaseio.com/users/" + user.uid + "/projects/" + projectId).then(function(data){
+      this.$http.get("https://todolist-project99.firebaseio.com/users/" + user.uid + "/projects/" + projectId + ".json").then(function(data){
         return data.json();
       }).then(function(data){
         if(data == null)
           this.$router.push("/projects");
       });
     }
-  },
-  created(){
-    this.$parent.todolist = true;
-    this.$parent.projectKey = this.$route.params.id;
-    this.verifyProjectValidation(this.$parent.projectKey);
-    this.submitted = false;
   }
 }
 </script>
