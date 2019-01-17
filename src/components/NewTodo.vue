@@ -34,7 +34,7 @@ export default {
       if(this.todo.title != "" && this.todo.details != ""){
         this.invalidData = false;
         var userId = auth.currentUser.uid;
-        database.ref("users/"+ userId + "/projects/" + this.$parent.projectKey + "/posts.json").set({
+        database.ref("users/"+ userId + "/projects/" + this.$parent.projectKey + "/posts").set({
           //name of the todo
           title: this.todo.title,
           //description of the todo
