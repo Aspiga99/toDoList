@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component renders correctly 1`] = `
+<div id="new-project" style="background: rgb(221, 221, 221);">
+  <h3>Add a new Project</h3>
+  <form><label>Nome</label> <input type="text" placeholder="Nome" required="required">
+    <!----> <label>Descrizione</label> <textarea placeholder="Descrizione" required="required"></textarea>
+    <!----> <button id="submit" class="btn btn-primary">Add project</button></form>
+  <!---->
+</div>
+`;

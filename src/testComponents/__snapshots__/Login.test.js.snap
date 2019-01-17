@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login component renders correctly 1`] = `
+<div id="log-from">
+  <form>
+    <h4>Accedi</h4> <input id="userEmail" type="text" placeholder="Email" required="required"> <input id="userPassword" type="password" placeholder="Password" required="required">
+    <!----> <span class="error">* Compilare tutti i campi</span> <button id="submit" class="btn btn-primary">Accedi</button>
+    <div id="resetPassword"><a href="/resetPassword">Password dimenticata?</a></div>
+  </form>
+</div>
+`;
