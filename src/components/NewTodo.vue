@@ -65,7 +65,7 @@ export default {
     //get the project and verify if is created by the current user
     verifyProjectValidation: function(projectId){
       var user = auth.currentUser;
-      this.$http.get("https://todolist-project99.firebaseio.com/users/" + user.uid + "/projects/" + projectId + ".json").then(function(data){
+      this.$http.get("https://todolist-project99.firebaseio.com/users/" + user.uid + "/projects/" + projectId).then(function(data){
         return data.json();
       }).then(function(data){
         if(data == null)
