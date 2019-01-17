@@ -34,6 +34,7 @@ export default {
       if(this.todo.title != "" && this.todo.details != ""){
         this.invalidData = false;
         var userId = auth.currentUser.uid;
+        console.log("users/"+ userId + "/projects/" + this.$parent.projectKey + "/posts");
         database.ref("users/"+ userId + "/projects/" + this.$parent.projectKey + "/posts").set({
           //name of the todo
           title: this.todo.title,
@@ -45,8 +46,8 @@ export default {
           console.log(error.message);
         }).then( () => {
           this.submitted = true;
-          this.message = "The todo has been created!!"
-          this.backgroundC = "lightgreen"
+          this.message = "The todo has been created!!";
+          this.backgroundC = "lightgreen";
         });
       }
       else {
