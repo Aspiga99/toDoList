@@ -1,7 +1,5 @@
 <template lang="html">
   <div id="home">
-
-
     <h2>Projects</h2>
     <div class="element" v-for="project in projects">
       <button data-toggle="modal" v-bind:data-target="'#elDetails'+project.id"   class="project btn btn-primary">
