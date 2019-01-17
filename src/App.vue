@@ -7,11 +7,6 @@
 
 <script>
 import header from "./components/Header.vue"
-const loadingImage = new Image();
-loadingImage.src = "https://github.com/Aspiga99/toDoList/blob/master/loading.gif?raw=true";
-
-const addImage = new Image();
-addImage.src = "https://github.com/Aspiga99/toDoList/blob/master/Add.png?raw=true";
 
 export default {
   components: {

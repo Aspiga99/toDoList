@@ -1,6 +1,5 @@
 <template lang="html">
   <div id="register-from">
-    <img style="display: none;" src="https://github.com/Aspiga99/toDoList/blob/master/loading.gif?raw=true"/>
     <form v-if="!userCreated">
       <h4>Registrati</h4>
       <input type="text" id="name" max-length="50" v-model="user.name" placeholder="inserisci nome" v-on:keyup="checkIfEmptyFields()" required>
@@ -16,7 +15,7 @@
 
       <button id="registerButton" v-on:click.prevent="createUser" class="btn btn-primary">
         Registrati
-        <img id="loadingGif" v-if="creatingUser" src="https://github.com/Aspiga99/toDoList/blob/master/loading.gif?raw=true"/>
+        <img id="loadingGif" v-if="creatingUser" src="../../assets/images/loading.gif"/>
       </button>
     </form>
   </div>

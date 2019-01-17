@@ -61,6 +61,8 @@ export default {
           name: this.project.name,
           //the description of the project
           description: this.project.description
+        }).catch((error) =>{
+          console.log(error.message)
         });
       }
       else{

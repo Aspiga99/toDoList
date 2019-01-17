@@ -1,6 +1,5 @@
 <template lang="html">
   <div id="log-from">
-    <img style="display: none;" src="https://github.com/Aspiga99/toDoList/blob/master/loading.gif?raw=true"/>
     <form>
       <h4>Accedi</h4>
       <input id="userEmail" type="text" v-on:keyup="checkIfEmptyFields" placeholder="Email" v-model="user.email" required>
@@ -10,7 +9,7 @@
 
       <button id="loginButton" v-on:click.prevent="login" class="btn btn-primary">
         Accedi
-        <img id="loadingGif" v-if="loading" src="https://github.com/Aspiga99/toDoList/blob/master/loading.gif?raw=true"/>
+        <img id="loadingGif" v-if="loading" src="../../assets/images/loading.gif"/>
       </button></br>
       <div id="text">
         <span><b>O</b></span>

@@ -34,7 +34,16 @@ export default {
       if(this.todo.title != "" && this.todo.details != ""){
         this.invalidData = false;
         var userId = auth.currentUser.uid;
-        this.$http.post("https://todolist-project99.firebaseio.com/users/" + userId + "/projects/" + this.$parent.projectKey + "/posts.json", this.todo).then(function(data){
+        database.ref("users/"+ userId + "/projects/" + this.$parent.projectKey + "/posts.json").set({
+          //name of the todo
+          title: this.todo.title,
+          //description of the todo
+          details: this.todo.details,
+          //the type of the todo
+          type: this.todo.type
+        }).catch( (error) => {
+          console.log(error.message);
+        }).then( () => {
           this.submitted = true;
           this.message = "The todo has been created!!"
           this.backgroundC = "lightgreen"

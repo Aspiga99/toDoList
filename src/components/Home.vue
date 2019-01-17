@@ -1,9 +1,6 @@
 <template lang="html">
   <div id="home">
-    <!-- <image-preloader :src="'https://github.com/Aspiga99/toDoList/blob/master/loading.gif?raw=true'"/> -->
-    <!-- <image-preloader :src="'https://github.com/Aspiga99/toDoList/blob/master/Add.png?raw=true'"/> -->
-    <img style="display: none;" src="https://github.com/Aspiga99/toDoList/blob/master/loading.gif?raw=true"/>
-    <img style="display: none;" src="https://github.com/Aspiga99/toDoList/blob/master/Add.png?raw=true"/>
+
 
     <h2>Projects</h2>
     <div class="element" v-for="project in projects">
@@ -35,11 +32,11 @@
     <!-- redirect in the create project page -->
     <button id="new" class="project btn" v-on:click="add">
       Add a new project</br>
-      <img id="image" src="https://github.com/Aspiga99/toDoList/blob/master/Add.png?raw=true" alt="" >
+      <img id="image" src="../../assets/images/Add.png" alt="" >
     </button>
     <div id="overlay" v-if="loading">
       <div id="loadingDiv">
-        <img id="loadingGif" src="https://github.com/Aspiga99/toDoList/blob/master/loading.gif?raw=true"/>
+        <img id="loadingGif" src="../../assets/images/loading.gif"/>
       </div>
     </div>
   </div>
@@ -48,7 +45,7 @@
 <script>
 import { auth, database } from "../config/firebase_config.js"
 const loadingImage = new Image();
-loadingImage.src = "https://github.com/Aspiga99/toDoList/blob/master/loading.gif?raw=true";
+loadingImage.src = "../../assets/images/loading.gif";
 
 
 export default {
