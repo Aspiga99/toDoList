@@ -30,11 +30,11 @@
     <!-- redirect in the create project page -->
     <button id="new" class="project btn" v-on:click="add">
       Add a new project</br>
-      <img id="image" src="../../assets/images/Add.png" alt="" >
+      <img id="image" src="https://github.com/Aspiga99/toDoList/blob/master/assets/images/Add.png?raw=true" alt="" >
     </button>
     <div id="overlay" v-if="loading">
       <div id="loadingDiv">
-        <img id="loadingGif" src="../../assets/images/loading.gif"/>
+        <img id="loadingGif" src="https://github.com/Aspiga99/toDoList/blob/master/assets/images/loading.gif?raw=true"/>
       </div>
     </div>
   </div>
@@ -43,7 +43,7 @@
 <script>
 import { auth, database } from "../config/firebase_config.js"
 const loadingImage = new Image();
-loadingImage.src = "../../assets/images/loading.gif";
+loadingImage.src = "https://github.com/Aspiga99/toDoList/blob/master/assets/images/loading.gif?raw=true";
 
 
 export default {

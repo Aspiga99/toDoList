@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Register component renders correctly 1`] = `
-<div id="register-from"><img src="https://github.com/Aspiga99/toDoList/blob/master/loading.gif?raw=true" style="display: none;">
+<div id="register-from">
   <form>
     <h4>Registrati</h4> <input type="text" id="name" max-length="50" placeholder="inserisci nome" required="required"> <input type="text" max-length="50" placeholder="inserisci cognome" required="required"> <input type="text" max-length="50" placeholder="inserisci indirizzo email" required="required"> <span class="errorMessage">* inserire un indirizzo email valido</span>
     <!----> <input id="input-password" type="password" placeholder="inserisci password" required="required"> <span class="errorMessage">* La password deve essere di almeno 6 caratteri e contenere almeno 1 carattere Maiuscolo, 1 carattere minuscolo e 1 numero<br></span> <input type="password" placeholder="reinserisci password" required="required">

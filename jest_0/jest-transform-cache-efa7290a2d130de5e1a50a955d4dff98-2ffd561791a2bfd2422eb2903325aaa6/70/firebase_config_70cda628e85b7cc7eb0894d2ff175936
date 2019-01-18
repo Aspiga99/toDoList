@@ -1,0 +1,28 @@
+20842e68c3a2745ae4e17941df451d34
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.firebase = exports.database = exports.auth = undefined;
+
+var _firebase = require("firebase");
+
+var _firebase2 = _interopRequireDefault(_firebase);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var config = {
+  apiKey: "AIzaSyDDGL2p9NRK2XKro8U_8iz1pzIdm3qEJCE",
+  authDomain: "todolist-project99.firebaseapp.com",
+  databaseURL: "https://todolist-project99.firebaseio.com",
+  projectId: "todolist-project99",
+  storageBucket: "todolist-project99.appspot.com",
+  messagingSenderId: "997829562670"
+};
+_firebase2.default.initializeApp(config);
+
+var auth = exports.auth = _firebase2.default.auth();
+var database = exports.database = _firebase2.default.database();
+var firebase = exports.firebase = _firebase2.default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpcmViYXNlX2NvbmZpZy5qcyJdLCJuYW1lcyI6WyJjb25maWciLCJhcGlLZXkiLCJhdXRoRG9tYWluIiwiZGF0YWJhc2VVUkwiLCJwcm9qZWN0SWQiLCJzdG9yYWdlQnVja2V0IiwibWVzc2FnaW5nU2VuZGVySWQiLCJmIiwiaW5pdGlhbGl6ZUFwcCIsImF1dGgiLCJkYXRhYmFzZSIsImZpcmViYXNlIl0sIm1hcHBpbmdzIjoiOzs7Ozs7O0FBQUE7Ozs7OztBQUVBLElBQU1BLFNBQVM7QUFDYkMsVUFBUSx5Q0FESztBQUViQyxjQUFZLG9DQUZDO0FBR2JDLGVBQWEsMkNBSEE7QUFJYkMsYUFBVyxvQkFKRTtBQUtiQyxpQkFBZSxnQ0FMRjtBQU1iQyxxQkFBbUI7QUFOTixDQUFmO0FBUUFDLG1CQUFFQyxhQUFGLENBQWdCUixNQUFoQjs7QUFFTyxJQUFNUyxzQkFBT0YsbUJBQUVFLElBQUYsRUFBYjtBQUNBLElBQU1DLDhCQUFXSCxtQkFBRUcsUUFBRixFQUFqQjtBQUNBLElBQU1DLDhCQUFXSixrQkFBakIiLCJmaWxlIjoiZmlyZWJhc2VfY29uZmlnLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IGYgZnJvbSBcImZpcmViYXNlXCJcclxuXHJcbmNvbnN0IGNvbmZpZyA9IHtcclxuICBhcGlLZXk6IFwiQUl6YVN5RERHTDJwOU5SSzJYS3JvOFVfOGl6MXB6SWRtM3FFSkNFXCIsXHJcbiAgYXV0aERvbWFpbjogXCJ0b2RvbGlzdC1wcm9qZWN0OTkuZmlyZWJhc2VhcHAuY29tXCIsXHJcbiAgZGF0YWJhc2VVUkw6IFwiaHR0cHM6Ly90b2RvbGlzdC1wcm9qZWN0OTkuZmlyZWJhc2Vpby5jb21cIixcclxuICBwcm9qZWN0SWQ6IFwidG9kb2xpc3QtcHJvamVjdDk5XCIsXHJcbiAgc3RvcmFnZUJ1Y2tldDogXCJ0b2RvbGlzdC1wcm9qZWN0OTkuYXBwc3BvdC5jb21cIixcclxuICBtZXNzYWdpbmdTZW5kZXJJZDogXCI5OTc4Mjk1NjI2NzBcIlxyXG59O1xyXG5mLmluaXRpYWxpemVBcHAoY29uZmlnKVxyXG5cclxuZXhwb3J0IGNvbnN0IGF1dGggPSBmLmF1dGgoKTtcclxuZXhwb3J0IGNvbnN0IGRhdGFiYXNlID0gZi5kYXRhYmFzZSgpO1xyXG5leHBvcnQgY29uc3QgZmlyZWJhc2UgPSBmO1xyXG4iXX0=

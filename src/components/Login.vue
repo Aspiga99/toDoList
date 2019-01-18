@@ -9,7 +9,7 @@
 
       <button id="loginButton" v-on:click.prevent="login" class="btn btn-primary">
         Accedi
-        <img id="loadingGif" v-if="loading" src="../../assets/images/loading.gif"/>
+        <img id="loadingGif" v-if="loading" src="https://github.com/Aspiga99/toDoList/blob/master/assets/images/loading.gif?raw=true"/>
       </button></br>
       <div id="text">
         <span><b>O</b></span>

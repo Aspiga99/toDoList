@@ -15,7 +15,7 @@
 
       <button id="registerButton" v-on:click.prevent="createUser" class="btn btn-primary">
         Registrati
-        <img id="loadingGif" v-if="creatingUser" src="../../assets/images/loading.gif"/>
+        <img id="loadingGif" v-if="creatingUser" src="https://github.com/Aspiga99/toDoList/blob/master/assets/images/loading.gif?raw=true"/>
       </button>
     </form>
   </div>

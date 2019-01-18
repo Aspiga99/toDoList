@@ -53,7 +53,7 @@
                           <div class="modal-footer">
                             <button class="btn-primary btn" @click="deleteUser()">
                               Conferma
-                              <img id="loadingGif" v-if="removingUser" src="../../assets/images/loading.gif"/>
+                              <img id="loadingGif" v-if="removingUser" src="https://github.com/Aspiga99/toDoList/blob/master/assets/images/loading.gif?raw=true"/>
                             </button>
                             <button class="btn-secondary btn" data-dismiss="modal" >Annulla</button>
                           </div>
@@ -108,7 +108,7 @@
                 <!-- set new password button -->
                 <button id="changeButton" @click="setNewPassword" class="btn btn-primary ml-2" disabled>
                   Cambia password
-                  <img id="loadingGif" v-if="changingPassword" src="../../assets/images/loading.gif"/>
+                  <img id="loadingGif" v-if="changingPassword" src="https://github.com/Aspiga99/toDoList/blob/master/assets/images/loading.gif?raw=true"/>
                 </button>
                 <span v-if="passwordChanged" style="color: green"> Password changed!</span>
                 <span v-if="passwordChangeFailed" style="color: red"> Password not changed!</span>
@@ -121,7 +121,7 @@
       <!-- loading image -->
       <div id="overlay" v-if="loading">
         <div id="loadingDiv">
-          <img  src="../../assets/images/loading.gif"/>
+          <img  src="https://github.com/Aspiga99/toDoList/blob/master/assets/images/loading.gif?raw=true"/>
         </div>
       </div>
     </div>

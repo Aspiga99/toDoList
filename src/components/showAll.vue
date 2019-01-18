@@ -11,7 +11,7 @@
     <div class="row" id="main">
       <div id="overlay" v-if="loading">
         <div id="loadingDiv">
-          <img id="loadingGif" src="../../assets/images/loading.gif"/>
+          <img id="loadingGif" src="https://github.com/Aspiga99/toDoList/blob/master/assets/images/loading.gif?raw=true"/>
         </div>
       </div>
       <div id="todo" class="col-sm">
