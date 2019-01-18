@@ -1,9 +1,8 @@
 .DS_Store
 node_modules/
-dist/
-src/local
+src/local/**
 v8-compile-cache-0/
-jest_0/
+jest_0/**
 npm-debug.log
 yarn-error.log
 
