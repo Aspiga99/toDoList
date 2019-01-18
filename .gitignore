@@ -2,6 +2,8 @@
 node_modules/
 dist/
 src/local
+v8-compile-cache-O
+jest_O
 npm-debug.log
 yarn-error.log
 
